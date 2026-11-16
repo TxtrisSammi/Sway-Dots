@@ -29,6 +29,8 @@ default_border pixel 2
 default_floating_border pixel 2
 client.focused #000000 #000000 #000000 #000000 #655966
 
+gaps inner 4
+
 ### Input configuration
 input type:touchpad {
 	 dwt enabled
