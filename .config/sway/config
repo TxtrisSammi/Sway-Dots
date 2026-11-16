@@ -1,0 +1,48 @@
+# Default config for sway
+#
+# Copy this to ~/.config/sway/config and edit it to your liking.
+#
+# Read `man 5 sway` for a complete reference.
+
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+# Your preferred terminal emulator
+set $term kitty
+# Your preferred application launcher
+set $menu rofi -show drun
+
+### Output configuration
+#
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+exec awww-daemon & awww img ~/Pictures/wallpapers/Coffee-1.png
+
+### Input configuration
+#
+# Example configuration:
+#
+#   input type:touchpad {
+#       dwt enabled
+#       tap enabled
+#       natural_scroll enabled
+#       middle_emulation enabled
+#   }
+#
+#   input type:keyboard {
+#       xkb_layout "eu"
+#   }
+#
+# You can also configure each device individually.
+# Read `man 5 sway-input` for more information about this section.
+
+# Status Bar:
+exec waybar
+
+include /etc/sway/config.d/*
+include /home/txtrissammi/.config/sway/config.d/*
